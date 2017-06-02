@@ -3,7 +3,7 @@
   "bin": {
     "redux-create-action-index": "./bin/redux-create-action-index.js"
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Creates an ES6 ./index.js file within target directories that imports all action files and exports a single action object.",
   "main": "./dist/index.js",
   "scripts": {
