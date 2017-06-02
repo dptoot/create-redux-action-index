@@ -60,3 +60,10 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(mapStateToProps, mapDispatchToProps)(Component);
 ```
+
+### CLI Options
+```sh
+  --indent, -i  set number of spaces to indent             [number] [default: 4]
+  --suffix, -s  suffix to add to the import module name    [string] [default: "Actions"]
+  --help        Show help                                  [boolean]
+```
