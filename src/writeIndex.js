@@ -16,14 +16,14 @@ function buildExport(options) {
 }
 
 module.exports = function(dir, options) {
-    console.log(options)
+    log(`processing ${dir}`);
     const sourceDir = path.resolve(process.cwd(), dir);
 
     children = fs.readdirSync(sourceDir);
     children = children
         .map(child => {
             return {
-                module: child.replace('.js', '') + 'Actions',
+                module: child.replace('.js', options.suffix),
                 filename: child, 
             }
         })
@@ -32,4 +32,5 @@ module.exports = function(dir, options) {
     str = buildImports(options) + '\n\n' + buildExport(options);
 
     fs.writeFileSync(path.resolve(sourceDir, 'index.js'), str);
+    log(`generated redux action index file in ${dir}`);
 }

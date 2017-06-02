@@ -11,6 +11,14 @@ const argv = yargs
             type: 'number',
         }
     })
+    .options({
+        suffix: {
+            alias: 's',
+            default: 'Actions',
+            description: 'suffix to add to the import module name', 
+            type: 'string',
+        }
+    })
     .help()
     .argv
 
