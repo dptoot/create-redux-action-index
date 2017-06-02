@@ -1,7 +1,7 @@
 {
-  "name": "create-redux-action-index",
+  "name": "redux-create-action-index",
   "bin": {
-    "create-redux-action-index": "./bin/create-redux-action-index.js"
+    "redux-create-action-index": "./bin/redux-create-action-index.js"
   },
   "version": "1.0.0",
   "description": "Creates an ES6 ./index.js file within target directories that imports all action files and exports a single action object.",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dptoot/create-redux-action-index.git"
+    "url": "git+https://github.com/dptoot/redux-create-action-index.git"
   },
   "keywords": [
     "index",
@@ -25,9 +25,9 @@
   "author": "James Lewis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dptoot/create-redux-action-index/issues"
+    "url": "https://github.com/dptoot/redux-create-action-index/issues"
   },
-  "homepage": "https://github.com/dptoot/create-redux-action-index#readme",
+  "homepage": "https://github.com/dptoot/redux-create-action-index#readme",
   "dependencies": {
     "yargs": "^8.0.1"
   }
