@@ -1,9 +1,17 @@
 #! /usr/bin/env node
 const yargs = require('yargs');
-const writeIndex = require('../index');
+const writeIndexes = require('../src/index');
 const argv = yargs
     .demand(1)
+    .options({
+        indent: {
+            alias: 'i',
+            default: 4,
+            description: 'set number of spaces to indent', 
+            type: 'number',
+        }
+    })
     .help()
     .argv
 
-argv._.forEach(writeIndex);
+writeIndexes(argv._, argv);
